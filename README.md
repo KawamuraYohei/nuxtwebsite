@@ -86,9 +86,12 @@ https://qiita.com/_mamezou_/items/8f3711eb64c4bb2c51f6
 git init
 git add .
 git commit -m "first commit"
-<!-- git remote add origin https://github.com/KawamuraYohei/VueJsWebSite.git  -->
 git remote add origin https://github.com/KawamuraYohei/nuxtwebsite.git 
 git push -u origin master
+
+# リモートリポジトリをgit cloneした後は、Nuxtが無い為、追加
+https://www.lisz-works.com/entry/nuxt-project-first-step
+npm install --save nuxt
 
 # サーバ公開方法(解決)
 ## Netlify
