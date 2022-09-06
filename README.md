@@ -71,6 +71,9 @@ More information about the usage of this directory in [the documentation](https:
 
 ###### 以下個人的なメモ
 
+## yarnコマンド(msi)インストール
+https://www.suzu6.net/posts/124-yarn-windows/
+
 # bootstrap
 https://getbootstrap.jp/docs/5.0/components/carousel/
 
@@ -110,11 +113,9 @@ https://wingdoor.co.jp/blog/nuxt-js%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92
 # お問い合わせ
 https://notes.sharesl.net/articles/1711/#netlify%e3%81%a3%e3%81%a6%ef%bc%9f
 
+# axios
+https://ma-vericks.com/blog/nuxt-axios/
+
 # SCSSの導入方法を調べる？
 
 
-
-###### Tips ######
-
-## yarnコマンド(msi)インストール
-https://www.suzu6.net/posts/124-yarn-windows/
