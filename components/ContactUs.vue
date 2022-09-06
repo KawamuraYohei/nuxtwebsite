@@ -1,94 +1,25 @@
 <template>
-  <section>
-    <template v-if="!finished">
-      <div class="py-5">
-        <div class="container">
-          <div class="p-contact">
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              @submit.prevent
-            >
-              <p>
-                <label>
-                  お名前:
-                  <input v-model="form.name" type="text" name="name" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  メールアドレス:
-                  <input v-model="form.email" type="email" name="email" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  お問い合わせ内容:
-                  <textarea
-                    id="form-content"
-                    v-model="form.content"
-                    name="content"
-                  />
-                </label>
-              </p>
-              <p>
-                <button @click="handleSubmit" v-text="'送信'" />
-              </p>
-            </form>
+  <div>
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="main-heading">If you have any queries ?</h1>
+            <h4>Prease Reach out us at contact@example.com</h4>
+          </div>
+          <div class="col-md-4 text-center my-auto">
+            <NuxtLink to="/contact" class="p-2 btn btn-primary"
+              >Contact Us</NuxtLink>
           </div>
         </div>
       </div>
-    </template>
-    <template v-else>
-      <p v-text="'お問い合わせ頂きありがとうございました。'" />
-      <p><nuxt-link to="/" v-text="'TOPへ'" /></p>
-    </template>
-  </section>
+    </div>
+  </div>
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
-  name: "ContactUs",
-
-  data() {
-    return {
-      form: {
-        name: "",
-        email: "",
-        content: "",
-      },
-      finished: false,
-    };
-  },
-  methods: {
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join("&");
-    },
-    handleSubmit() {
-      const axiosConfig = {
-        header: { "Content-Type": "application/x-www-form-urlencoded" },
-      };
-      axios
-        .post(
-          "/",
-          this.encode({
-            "form-name": "contact",
-            ...this.form,
-          }),
-          axiosConfig
-        )
-        .then(() => {
-          this.finished = true;
-        });
-    },
-  },
+    name:"ContactUs",
 };
 </script>
 
