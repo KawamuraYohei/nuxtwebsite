@@ -21,10 +21,10 @@ export default {
         rel: 'stylesheet',
         href: '/css/bootstrap.min.css'
       },
-      {
-        rel: 'stylesheet',
-        href: '/css/custom.css'
-      },
+      // {
+      //   rel: 'stylesheet',
+      //   href: '/css/custom.css'
+      // },
       { rel: 'preconnect',
         href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect',
@@ -42,7 +42,12 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    { src: '~/assets/scss/common.scss' },
   ],
+
+  styleResources: {
+    scss: ['~/assets/scss/_variable.scss'],
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -58,6 +63,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     "@nuxtjs/axios",
+    '@nuxtjs/style-resources',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

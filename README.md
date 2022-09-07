@@ -120,6 +120,9 @@ https://notes.sharesl.net/articles/1711/#netlify%e3%81%a3%e3%81%a6%ef%bc%9f
 # axios
 https://ma-vericks.com/blog/nuxt-axios/
 
+## Form.htmlの隠し方
+
 # SCSSの導入方法を調べる？
+https://ma-vericks.com/blog/nuxt-scss/
 
 
