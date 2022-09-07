@@ -1,0 +1,9 @@
+// 使用するカラー
+$bg-gray: #f2f2f2f2;
+
+// @include flex(center, center);
+@mixin flex($justify-content: unset, $align-items: unset) {
+    display        : flex;
+    justify-content: $justify-content;
+    align-items    : $align-items;
+}
