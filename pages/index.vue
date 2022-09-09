@@ -1,13 +1,31 @@
 <template>
-  <section>
-    <Slider />
+  <div>
+    <section>
+      <Slider />
+    </section>
 
-    <Aboutus />
+    <section>
+      <Aboutus />
+    </section>
 
-    <OurServices />
+    <section>
+      <OurServices />
+    </section>
 
-    <ContactUs />
-  </section>
+    <section>
+      <ul>
+        <li v-for="item in items" :key="item.id">
+          <nuxt-link :to="`/${item.id}`">
+            {{ item.n_title }}
+          </nuxt-link>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <ContactUs />
+    </section>
+  </div>
 </template>
 
 <script>
@@ -15,6 +33,7 @@ import Slider from "~/components/Slider.vue";
 import Aboutus from "~/components/Aboutus.vue";
 import OurServices from "~/components/OurServices.vue";
 import ContactUs from "~/components/ContactUs.vue";
+import axios from "axios";
 
 export default {
   name: "IndexPage",
@@ -34,6 +53,24 @@ export default {
           content: "Vue, nuxt ,javascript - HomePage",
         },
       ],
+    };
+  },
+  data() {
+    return {
+      items: [],
+    };
+  },
+  async asyncData() {
+    const { data } = await axios.get(
+      "https://nuxtwebsite.microcms.io/api/v1/news",
+      {
+        headers: {
+          "X-MICROCMS-API-KEY": "d1bced36fdc040bb9287629c218850dd0cb6",
+        },
+      }
+    );
+    return {
+      items: data.contents,
     };
   },
 };
