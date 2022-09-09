@@ -105,6 +105,11 @@ https://qiita.com/isihigameKoudai/items/e3b136e9964f1d30d73d
 https://app.netlify.com/sites/lighthearted-cactus-d5f399/overview
 
 
+# FireBase
+https://console.firebase.google.com/project/nuxtwebsite/overview
+https://jeannie-blog.online/create-firebase-project/
+https://www.azukipan.com/posts/firebase-project-config-setting/
+
 # googlefonts(解決)
 https://devsakaso.com/nuxt-js-google-fonts/
 
@@ -112,6 +117,13 @@ https://devsakaso.com/nuxt-js-google-fonts/
 
 ## blog, 管理画面無し
 https://wingdoor.co.jp/blog/nuxt-js%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E4%BD%9C%E3%82%8B/
+
+## blog, FireBase
+https://zenn.dev/tsuboi/articles/3f587ff792e68c
+
+## blog, microcms
+https://nuxtwebsite.microcms.io/create-api
+https://blog.microcms.io/microcms-nuxt-jamstack-blog/
 
 # お問い合わせ
 https://jamstack.jp/blog/how_to_create_netlify_forms/
@@ -122,7 +134,7 @@ https://ma-vericks.com/blog/nuxt-axios/
 
 ## Form.htmlの隠し方
 
-# SCSSの導入方法を調べる？
+# SCSSの導入方法を調べる(解決)
 https://ma-vericks.com/blog/nuxt-scss/
 
 
