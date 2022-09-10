@@ -89,6 +89,7 @@ https://app.netlify.com/sites/lighthearted-cactus-d5f399/overview
 # git
 https://qiita.com/_mamezou_/items/8f3711eb64c4bb2c51f6
 
+## gitの初期設定
 git init
 git add .
 git commit -m "first commit"
@@ -115,14 +116,14 @@ https://devsakaso.com/nuxt-js-google-fonts/
 
 # blogの作り方？
 
-## blog, 管理画面無し
+## blog, 管理画面無し(ボツ)
 https://wingdoor.co.jp/blog/nuxt-js%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E4%BD%9C%E3%82%8B/
 
-## blog, FireBase
+## blog, FireBase(ボツ)
 https://zenn.dev/tsuboi/articles/3f587ff792e68c
 
-## blog, microcms
-https://nuxtwebsite.microcms.io/create-api
+## blog, microcms(採用、作業中)
+https://nuxtwebsite.microcms.io/
 https://blog.microcms.io/microcms-nuxt-jamstack-blog/
 
 # お問い合わせ
