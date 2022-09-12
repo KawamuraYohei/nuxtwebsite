@@ -99,7 +99,7 @@ export default {
       // 一覧のページング
       const pages = await axios
         .get(`https://nuxtwebsite.microcms.io/api/v1/news?limit=0`, {
-          headers: { 'X-MICROCMS-API-KEY': API_KEY },
+          headers: { "X-MICROCMS-API-KEY": "d1bced36fdc040bb9287629c218850dd0cb6" },
         })
         .then((res) =>
           range(1, Math.ceil(res.data.totalCount / limit)).map((p) => ({
