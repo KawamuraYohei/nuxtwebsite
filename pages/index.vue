@@ -20,6 +20,13 @@
           </nuxt-link>
         </li>
       </ul>
+
+      <div>
+        <Pagination
+          :pager="pager"
+          :current="Number(page)"
+        />
+      </div>
     </section>
 
     <section>
@@ -60,9 +67,13 @@ export default {
       items: [],
     };
   },
-  async asyncData() {
+  async asyncData({ params }) {
+    const page = params.p || "1";
+    const limit = 2;
     const { data } = await axios.get(
-      "https://nuxtwebsite.microcms.io/api/v1/news",
+      `https://nuxtwebsite.microcms.io/api/v1/news?limit=${limit}&offset=${
+        (page - 1) * limit
+      }`,
       {
         headers: {
           "X-MICROCMS-API-KEY": "d1bced36fdc040bb9287629c218850dd0cb6",
@@ -71,6 +82,8 @@ export default {
     );
     return {
       items: data.contents,
+      page,
+      pager: [...Array(Math.ceil(data.totalCount / limit)).keys()],
     };
   },
 };
