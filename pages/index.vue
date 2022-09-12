@@ -20,6 +20,13 @@
           </nuxt-link>
         </li>
       </ul>
+
+      <div>
+        <Pagination
+          :pager="pager"
+          :current="Number(page)"
+        />
+      </div>
     </section>
 
     <section>
@@ -75,6 +82,8 @@ export default {
     );
     return {
       items: data.contents,
+      page,
+      pager: [...Array(Math.ceil(data.totalCount / limit)).keys()],
     };
   },
 };
