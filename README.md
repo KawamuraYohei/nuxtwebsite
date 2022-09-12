@@ -105,7 +105,6 @@ npm install --save nuxt
 https://app.netlify.com/sites/lighthearted-cactus-d5f399/overview
 https://qiita.com/isihigameKoudai/items/e3b136e9964f1d30d73d
 
-
 # FireBase
 https://console.firebase.google.com/project/nuxtwebsite/overview
 https://jeannie-blog.online/create-firebase-project/
