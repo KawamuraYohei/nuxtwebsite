@@ -60,9 +60,13 @@ export default {
       items: [],
     };
   },
-  async asyncData() {
+  async asyncData({ params }) {
+    const page = params.p || "1";
+    const limit = 2;
     const { data } = await axios.get(
-      "https://nuxtwebsite.microcms.io/api/v1/news",
+      `https://nuxtwebsite.microcms.io/api/v1/news?limit=${limit}&offset=${
+        (page - 1) * limit
+      }`,
       {
         headers: {
           "X-MICROCMS-API-KEY": "d1bced36fdc040bb9287629c218850dd0cb6",

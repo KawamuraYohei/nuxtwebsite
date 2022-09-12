@@ -102,8 +102,8 @@ npm install --save nuxt
 
 # サーバ公開方法(解決)
 ## Netlify
-https://qiita.com/isihigameKoudai/items/e3b136e9964f1d30d73d
 https://app.netlify.com/sites/lighthearted-cactus-d5f399/overview
+https://qiita.com/isihigameKoudai/items/e3b136e9964f1d30d73d
 
 
 # FireBase
